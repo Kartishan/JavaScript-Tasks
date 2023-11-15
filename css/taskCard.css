@@ -1,0 +1,41 @@
+.taskCardCon{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+.taskCardCon div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.taskCardHeader{
+    display: flex;
+    height: 45px;
+    font-size: 24px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskCardHeaderBacklog{
+    width: 100px;
+    background-color: #e3e3e3;
+    color: gray
+}
+.taskCardHeaderInProccess{
+    width: 150px;
+    background: #d6e7ff;
+    color: #3e8def;
+}
+.taskCardHeaderDone{
+    width: 100px;
+    background: #d7f9e0;
+    color: #92c781;
+}
+.taskCardHeaderBin{
+    width: 125px;
+    background: #fbe3e3;
+    color: #d5837b;
+}

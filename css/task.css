@@ -1,0 +1,27 @@
+.taskCardElement{
+    display: flex;
+    width: 200px;
+    height: 45px;
+    background: #fff;
+    font-size: 16px;
+    color: black;
+    padding-left: 10px;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+
+.cardBacklog{
+    box-shadow: -5px 0px 0px 0px #e3e3e3;
+}
+.cardInProccess{
+    box-shadow: -5px 0px 0px 0px #d6e7ff;
+}
+.cardDone{
+    box-shadow: -5px 0px 0px 0px #d7f9e0;
+}
+.cardBin{
+    box-shadow: -5px 0px 0px 0px #fbe3e3;
+}
