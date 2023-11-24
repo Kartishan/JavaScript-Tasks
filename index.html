@@ -2,44 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Document</title>
+    <title>Todo list</title>
 </head>
-<body>
-    <header class="header">
-        <h1>Список задач</h1>
-    </header>
+<body id="bodyApp">
     <main>
         <section class="addTaskCon">
-            <h2>Новая задача</h2>
-            <input class="addTaskInput" placeholder="Название задачи..."/>
-            <button class="addTaskButton">🞣 Добавить</button>
-        </section>
-        <section class="taskCardCon">
-            <div>
-                <h2 class="taskCardHeader taskCardHeaderBacklog">Бэклог</h2>
-                <p class="taskCardElement cardBacklog">Выучить JS</p>
-                <p class="taskCardElement cardBacklog">Выучить React</p>
-                <p class="taskCardElement cardBacklog">Сделать домашку</p>
-            </div>
-            <div>
-                <h2 class="taskCardHeader taskCardHeaderInProccess">В процессе</h2>
-                <p class="taskCardElement cardInProccess">Выпить смузи</p>
-                <p class="taskCardElement cardInProccess">Попить воды</p>
-            </div>
-            <div>
-                <h2 class="taskCardHeader taskCardHeaderDone">Готово</h2>
-                <p class="taskCardElement cardDone">Позвонить мамае</p>
-                <p class="taskCardElement cardDone">Поладить кота</p>
-            </div>
-            <div>
-                <h2 class="taskCardHeader taskCardHeaderBin">Корзина</h2>
-                <p class="taskCardElement cardBin">Сходить погулять</p>
-                <p class="taskCardElement cardBin">Прочитвть Войну и Мир</p>
-                <button class="clearButton">✕ Очистить</button>
-            </div>
+
         </section>
     </main>
+    <script src="src/main.js" type="module"></script>
 </body>
 </html>
