@@ -13,15 +13,15 @@
 }
 
 
-.cardBacklog{
+.cardbacklog{
     box-shadow: -5px 0px 0px 0px #e3e3e3;
 }
-.cardInProccess{
+.cardinProcess{
     box-shadow: -5px 0px 0px 0px #d6e7ff;
 }
-.cardDone{
+.carddone{
     box-shadow: -5px 0px 0px 0px #d7f9e0;
 }
-.cardBin{
+.cardbin{
     box-shadow: -5px 0px 0px 0px #fbe3e3;
 }

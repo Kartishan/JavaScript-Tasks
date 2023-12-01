@@ -1,26 +1,24 @@
+import { StatusLabel } from '../const.js';
 import {createElement} from '../render.js';
+import { AbstractComponent } from './AbstractComponent.js';
 
-function createCardCon() {
+function createCardCon(status) {
     return (
         `<div id="cardList">
-            <h2 class="taskCardHeader taskCardHeaderInProccess">В процессе</h2>
+            <h2 class="taskCardHeader taskCardHeader${status}">${StatusLabel[status]}</h2>
         </div>`
       );
 }
 
-export class CreateCardCon {
+export class CreateCardCon extends AbstractComponent{
+    #status = null;
+
+    constructor({status}){
+        super();
+        this.#status = status;
+    }
+      
     getTemplate() {
-        return createCardCon();
-    }
-    getElement() {
-        if (!this.element) {
-        this.element = createElement(this.getTemplate());
-    }
-
-    return this.element;
-    }
-
-    removeElement() {
-        this.element = null;
+        return createCardCon(this.#status);
     }
 }

@@ -1,4 +1,5 @@
 import {createElement} from '../render.js';
+import { AbstractComponent } from './AbstractComponent.js';
 
 function createFormAddTaskComponentTemplate() {
     return (
@@ -10,19 +11,8 @@ function createFormAddTaskComponentTemplate() {
       );
 }
 
-export class FormAddTaskComponent {
+export class FormAddTaskComponent extends AbstractComponent {
     getTemplate() {
         return createFormAddTaskComponentTemplate();
-    }
-    getElement() {
-        if (!this.element) {
-        this.element = createElement(this.getTemplate());
-    }
-
-    return this.element;
-    }
-
-    removeElement() {
-        this.element = null;
     }
 }

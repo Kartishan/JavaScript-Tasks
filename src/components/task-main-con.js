@@ -1,4 +1,5 @@
 import {createElement} from '../render.js';
+import { AbstractComponent } from './AbstractComponent.js';
 
 
 function createTaskMainCon() {
@@ -8,21 +9,8 @@ function createTaskMainCon() {
 }
 
 
-export class TaskMainCon {
+export class TaskMainCon extends AbstractComponent{
   getTemplate() {
     return createTaskMainCon();
-  }
-
-
-  getElement() {
-    if (!this.element) {
-      this.element = createElement(this.getTemplate());
-    }
-
-
-    return this.element;
-  }
-  removeElement() {
-    this.element = null;
   }
 }
