@@ -17,7 +17,7 @@ export class CardComponent extends AbstractComponent{
         this.#id = id;
         this.#status = status;
         this.#title = title;
-        console.log(id, title, status);
+
     }
       
 
