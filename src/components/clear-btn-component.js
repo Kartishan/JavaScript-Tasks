@@ -25,6 +25,6 @@ export class ClearBtn extends AbstractComponent {
     buttonClickHandler(evt) {
         evt.preventDefault();
         this.#taskService.deleteAll();
-        window.dispatchEvent(new CustomEvent("create-task"));
+        window.dispatchEvent(new CustomEvent("removeBasket"));
     }
 }
