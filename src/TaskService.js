@@ -18,7 +18,8 @@ export class TasksService {
     }
 
     deleteAll(){
-        this.#boardTasks.length = 0; 
+        const filteredTasks = this.#boardTasks.filter(task => task.status !== 'bin');
+        this.#boardTasks = filteredTasks;
     }
 
     getTasks(){
